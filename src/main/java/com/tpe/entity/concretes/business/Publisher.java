@@ -4,10 +4,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Data
@@ -16,20 +17,20 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "publishers")
-@EqualsAndHashCode(of = "id")
-@ToString
+
 public class Publisher {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false, unique = true, length = 100)
+    @NotNull(message = "Name must not be empty")
+    @Size(min = 2, max = 50, message = "Name '${validatedValue}' must be between {min} and {max} chars")
     private String name;
 
-    @Column(name = "address", length = 200)
-    private String address;
+    @NotNull
+    private Boolean builtIn=false;
 
-    @OneToMany(mappedBy = "publisher", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "publisher", fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
     private List<Book> books;
 }

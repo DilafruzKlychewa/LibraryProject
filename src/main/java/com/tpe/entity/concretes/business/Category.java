@@ -1,32 +1,35 @@
 package com.tpe.entity.concretes.business;
+// checked
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Entity
-@Table(name = "categories")
-@EqualsAndHashCode(of = "id")
-@ToString
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder(toBuilder = true)
 public class Category {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false, unique = true, length = 50)
+    @NotNull(message = "Name must not be empty")
+    @Size(min = 2, max = 80, message = "Name '${validatedValue}' must be between {min} and {max} chars")
     private String name;
+    @NotNull(message = "builtIn must not be empty")
+    private Boolean builtIn = false;
+    // sequence alanına mevcut en büyük sequence alanından bir fazlasını varsayılan değer olarak atama
+// işlemi repoda yapılacak
+    @NotNull(message = "sequence must not be empty")
+    private int sequence;
 
-    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
     private List<Book> books;
+
+
 }
