@@ -12,6 +12,7 @@ import org.springframework.data.jpa.repository.Query;
 public interface UserRepository extends JpaRepository<User,Long> {
 
     User findByEmail(String email);
+    User findByUsernameEquals(String username);
 
     @Query("SELECT u FROM User u WHERE u.role.name = :name")
     Page<User> findByUserByRole(String name, Pageable pageable);
