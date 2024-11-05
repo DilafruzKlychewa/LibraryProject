@@ -29,7 +29,7 @@ public class User {
     private Long id;
 
 //    @Column(name = "username", nullable = false, unique = true, length = 50)
-//    private String username;
+    private String username;
 
     @NotNull
     @Size(min = 2, max = 30)

@@ -1,23 +1,23 @@
-"2024-08-04 07:17:16,569 INFO  [main] com.tpe.LibraryProjectApplication:Starting LibraryProjectApplication using Java 17.0.9 on Bahtiyar-MacBook-Air.local with PID 23764 (/Users/bahtiyararalov/IdeaProjects/LibraryProject/target/classes started by bahtiyararalov in /Users/bahtiyararalov/IdeaProjects/LibraryProject)
-""2024-08-04 07:17:16,578 INFO  [main] com.tpe.LibraryProjectApplication:No active profile set, falling back to 1 default profile: "default"
-""2024-08-04 07:17:18,116 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-""2024-08-04 07:17:18,249 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 124 ms. Found 7 JPA repository interfaces.
-""2024-08-04 07:17:19,289 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
-""2024-08-04 07:17:19,299 INFO  [main] org.apache.catalina.core.StandardService:Starting service [Tomcat]
-""2024-08-04 07:17:19,299 INFO  [main] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.68]
-""2024-08-04 07:17:19,408 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
-""2024-08-04 07:17:19,409 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2730 ms
-""2024-08-04 07:17:19,716 INFO  [main] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
-""2024-08-04 07:17:19,759 INFO  [main] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.12.Final
-""2024-08-04 07:17:19,887 INFO  [main] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-""2024-08-04 07:17:20,088 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
-""2024-08-04 07:17:20,331 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
-""2024-08-04 07:17:20,353 INFO  [main] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
-""2024-08-04 07:17:21,730 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-""2024-08-04 07:17:21,739 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2024-08-04 07:17:22,403 ERROR [main] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl' defined in file [/Users/bahtiyararalov/IdeaProjects/LibraryProject/target/classes/com/tpe/security/service/UserDetailsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.tpe.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract com.tpe.entity.concretes.user.User com.tpe.repository.UserRepository.findByUsernameEquals(java.lang.String); Reason: Failed to create query for method public abstract com.tpe.entity.concretes.user.User com.tpe.repository.UserRepository.findByUsernameEquals(java.lang.String)! No property 'username' found for type 'User'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract com.tpe.entity.concretes.user.User com.tpe.repository.UserRepository.findByUsernameEquals(java.lang.String)! No property 'username' found for type 'User'
-""2024-08-04 07:17:22,438 INFO  [main] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
-""2024-08-04 07:17:22,443 WARN  [main] org.apache.catalina.loader.WebappClassLoaderBase:The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+"2024-11-05 14:26:53,964 INFO  [main] com.tpe.LibraryProjectApplication:Starting LibraryProjectApplication using Java 17.0.9 on Bahtiyar-MacBook-Air.local with PID 79912 (/Users/bahtiyararalov/IdeaProjects/LibraryProject/target/classes started by bahtiyararalov in /Users/bahtiyararalov/IdeaProjects/LibraryProject)
+""2024-11-05 14:26:53,973 INFO  [main] com.tpe.LibraryProjectApplication:No active profile set, falling back to 1 default profile: "default"
+""2024-11-05 14:26:55,559 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2024-11-05 14:26:55,712 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 138 ms. Found 7 JPA repository interfaces.
+""2024-11-05 14:26:56,762 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+""2024-11-05 14:26:56,771 INFO  [main] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+""2024-11-05 14:26:56,772 INFO  [main] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.68]
+""2024-11-05 14:26:56,890 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+""2024-11-05 14:26:56,891 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2806 ms
+""2024-11-05 14:26:57,221 INFO  [main] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+""2024-11-05 14:26:57,256 INFO  [main] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.12.Final
+""2024-11-05 14:26:57,363 INFO  [main] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2024-11-05 14:26:57,517 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+""2024-11-05 14:26:57,705 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+""2024-11-05 14:26:57,720 INFO  [main] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+""2024-11-05 14:26:59,009 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2024-11-05 14:26:59,020 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2024-11-05 14:26:59,502 ERROR [main] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl' defined in file [/Users/bahtiyararalov/IdeaProjects/LibraryProject/target/classes/com/tpe/security/service/UserDetailsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.tpe.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract com.tpe.entity.concretes.user.User com.tpe.repository.UserRepository.findByUsernameEquals(java.lang.String); Reason: Failed to create query for method public abstract com.tpe.entity.concretes.user.User com.tpe.repository.UserRepository.findByUsernameEquals(java.lang.String)! No property 'username' found for type 'User'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract com.tpe.entity.concretes.user.User com.tpe.repository.UserRepository.findByUsernameEquals(java.lang.String)! No property 'username' found for type 'User'
+""2024-11-05 14:26:59,537 INFO  [main] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+""2024-11-05 14:26:59,541 WARN  [main] org.apache.catalina.loader.WebappClassLoaderBase:The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
  java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
  java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
@@ -27,7 +27,7 @@
  java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
  java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
  java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
-""2024-08-04 07:17:22,446 WARN  [main] org.apache.catalina.loader.WebappClassLoaderBase:The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+""2024-11-05 14:26:59,541 WARN  [main] org.apache.catalina.loader.WebappClassLoaderBase:The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
  java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
  java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
@@ -36,14 +36,14 @@
  java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
  java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
  java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
-""2024-08-04 07:17:22,447 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-""2024-08-04 07:17:22,448 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
-""2024-08-04 07:17:22,449 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
-""2024-08-04 07:17:22,453 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
-""2024-08-04 07:17:22,469 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+""2024-11-05 14:26:59,543 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+""2024-11-05 14:26:59,543 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+""2024-11-05 14:26:59,544 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+""2024-11-05 14:26:59,548 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+""2024-11-05 14:26:59,564 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-""2024-08-04 07:17:22,493 ERROR [main] org.springframework.boot.SpringApplication:Application run failed
+""2024-11-05 14:26:59,591 ERROR [main] org.springframework.boot.SpringApplication:Application run failed
 "org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
@@ -202,3 +202,25 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96)
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
 	... 105 common frames omitted
+"2024-11-05 14:29:50,596 INFO  [main] com.tpe.LibraryProjectApplication:Starting LibraryProjectApplication using Java 17.0.9 on Bahtiyar-MacBook-Air.local with PID 79979 (/Users/bahtiyararalov/IdeaProjects/LibraryProject/target/classes started by bahtiyararalov in /Users/bahtiyararalov/IdeaProjects/LibraryProject)
+""2024-11-05 14:29:50,600 INFO  [main] com.tpe.LibraryProjectApplication:No active profile set, falling back to 1 default profile: "default"
+""2024-11-05 14:29:52,203 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2024-11-05 14:29:52,355 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 139 ms. Found 7 JPA repository interfaces.
+""2024-11-05 14:29:53,427 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+""2024-11-05 14:29:53,436 INFO  [main] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+""2024-11-05 14:29:53,436 INFO  [main] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.68]
+""2024-11-05 14:29:53,561 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+""2024-11-05 14:29:53,561 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2850 ms
+""2024-11-05 14:29:53,842 INFO  [main] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+""2024-11-05 14:29:53,884 INFO  [main] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.12.Final
+""2024-11-05 14:29:53,992 INFO  [main] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2024-11-05 14:29:54,153 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+""2024-11-05 14:29:54,332 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+""2024-11-05 14:29:54,346 INFO  [main] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+""2024-11-05 14:29:55,489 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2024-11-05 14:29:55,503 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2024-11-05 14:29:57,552 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2024-11-05 14:29:58,888 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67d55a46, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72115c48, org.springframework.security.web.context.SecurityContextPersistenceFilter@e2ee348, org.springframework.security.web.header.HeaderWriterFilter@7c6fc278, org.springframework.web.filter.CorsFilter@1d982fbe, org.springframework.security.web.authentication.logout.LogoutFilter@254d8ef6, com.tpe.security.jwt.AuthTokenFilter@18d1d137, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a1f22f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37b5a51c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3adb4cc8, org.springframework.security.web.session.SessionManagementFilter@1abea1ed, org.springframework.security.web.access.ExceptionTranslationFilter@448fa659, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70ccb3bf]
+""2024-11-05 14:29:59,303 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+""2024-11-05 14:29:59,317 INFO  [main] com.tpe.LibraryProjectApplication:Started LibraryProjectApplication in 14.415 seconds (JVM running for 15.043)
+"
